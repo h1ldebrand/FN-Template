@@ -1,0 +1,27 @@
+{
+  "name": "FN-Template",
+  "description": "start template for create web project",
+  "main": "index.js",
+  "authors": [
+    "Vadim Semenchuk <pro100_developer@ukr.net>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^6.0.0",
+    "bxslider-4": "bxSlider#^4.2.12",
+    "jquery-validation": "^1.16.0",
+    "jquery.maskedinput": "jquery-maskedinput#^1.4.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "parallax.js": "^1.4.2",
+    "waypoints": "^4.0.1",
+    "animate.css": "https://github.com/daneden/animate.css.git#^3.5.2"
+  }
+}
