@@ -1,5 +1,5 @@
 var gulp = require('gulp'), //gulp
-		sass = require('gulp-sass'), //для компиляции sass в css
+		sass = require('gulp-sass'), //для компиляции scss в css
 		pug = require('gulp-pug'), //для компиляции pug в html
 		browserSync = require('browser-sync').create(), //сервер
 		autoprefixer = require('gulp-autoprefixer'), //автоматическое добавление префиксов
@@ -18,9 +18,9 @@ var gulp = require('gulp'), //gulp
 		cheerio = require('gulp-cheerio'), // удаление лишних атрибутов из svg
 		replace = require('gulp-replace'); // фиксинг некоторых багов
 
-// Компилируем sass в css
+// Компилируем scss в css
 gulp.task('sass', function(){
-		return gulp.src('app/sass/*.sass')
+		return gulp.src('app/scss/*.scss')
 			.pipe(plumber({
 				errorHandler: notify.onError(function(err){
 					return {
@@ -100,7 +100,7 @@ gulp.task('sprite', function () {
     padding: 30
   }));
   spriteData.img.pipe(gulp.dest('app/img'));
-  spriteData.css.pipe(gulp.dest('app/sass/sprite'));
+  spriteData.css.pipe(gulp.dest('app/scss/sprite'));
 });
 
 gulp.task('svgSpriteBuild', function () {
@@ -158,7 +158,7 @@ gulp.task('build', ['clean'], function(){
 });
 //таск слежения за файломи
 gulp.task('watch', function(){
-	gulp.watch('app/sass/**/*.sass', ['sass']);
+	gulp.watch('app/scss/**/*.sass', ['sass']);
 	gulp.watch('app/pug/**/*.pug', ['pug']);
 	gulp.watch('app/js/*.js', browserSync.reload);
 });

@@ -28,10 +28,9 @@
     "gulp-svg-sprites": "^4.1.1",
     "gulp-svgmin": "^1.2.3",
     "gulp-uglify": "^2.1.2",
-    "gulp.spritesmith": "^6.4.0",
-    "pug": "^2.0.0-beta11"
+    "gulp.spritesmith": "^6.4.0"
   },
   "dependencies": {
-    
+    "normalize.css": "^7.0.0"
   }
 }

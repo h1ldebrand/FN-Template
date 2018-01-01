@@ -1,59 +1,65 @@
 // Подключаем переменные
-@import 'feature/vars'
+@import 'feature/_vars';
 
 // Подключаем миксины
-@import 'feature/mixins'
+@import 'feature/mixins';
 
 // Подключаем шрифты
-@import 'fonts/fonts'
+@import 'fonts/fonts';
 
-html
-	box-sizing: border-box
-	font-size: 16px
-	font-family: "Roboto-Regular", sans-serif
+html{
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Roboto-Regular", sans-serif;
+}
 
-body
-	margin: 0
-	padding: 0
-	height: 100%
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
 
-
-*, *:before, *:after
+*, *:before, *:after{
 	box-sizing: inherit
-
-h1, h2, h3, h4, h5, h6
-	margin: 0
-	padding: 0
-
-p
-	margin: 0
-	line-height: 1.5
+}
 
 
-ul
-	list-style-type: none
-	margin: 0
-	padding: 0
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
 
+
+p{
+	margin: 0;
+	line-height: 1.5;
+}
+
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
 
 
 // Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
 // @import 'sprite/sprite'
 
 // Стили шапки
-@import 'modules/header'
+@import 'modules/header';
 
 // Стили меню
 // @import 'modules/menu'
 
 // Стили главной страницы
-@import 'page/index'
+@import 'pages/index';
 
 // Стили футера
-@import 'modules/footer'
+@import 'modules/footer';
 
 // Стили мобильного меню
-@import 'modules/hidden'
+@import 'modules/hidden';
 
 
 
