@@ -19,7 +19,7 @@ var gulp = require('gulp'), //gulp
 		replace = require('gulp-replace'); // фиксинг некоторых багов
 
 // Компилируем scss в css
-gulp.task('sass', function(){
+gulp.task('scss', function(){
 		return gulp.src('app/scss/*.scss')
 			.pipe(plumber({
 				errorHandler: notify.onError(function(err){
@@ -158,9 +158,9 @@ gulp.task('build', ['clean'], function(){
 });
 //таск слежения за файломи
 gulp.task('watch', function(){
-	gulp.watch('app/scss/**/*.sass', ['sass']);
+	gulp.watch('app/scss/**/*.scss', ['scss']);
 	gulp.watch('app/pug/**/*.pug', ['pug']);
 	gulp.watch('app/js/*.js', browserSync.reload);
 });
 
-gulp.task('default', ['sass', 'pug', 'jquery', 'scripts', 'fontAweson', 'browser-sync', 'watch']);
+gulp.task('default', ['scss', 'pug', 'jquery', 'scripts', 'fontAweson', 'browser-sync', 'watch']);
