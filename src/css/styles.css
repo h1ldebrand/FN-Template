@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 20px;
+    display: flex;
+}
+
+.sample {
+    transition: all .2s ease;
+    flex-direction: column;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        flex-grow: 1;
+        size: 30px;
+        background: inline('lock.svg')
+    }
+
+    .parent &  {
+        display: none;
+    }
+}

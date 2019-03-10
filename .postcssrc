@@ -1,0 +1,16 @@
+{
+  "parser": "postcss-scss",
+  "map": false,
+  "plugins": {
+    "autoprefixer": {
+      "browsers": ['> 0.1%'],
+      "cascade": false
+    },
+    "postcss-nested" : {},
+    "postcss-short" : {},
+    "postcss-assets": {
+        "loadPaths": ["build/img/svg-icon"],
+        "relativeTo": "build/css"
+    }
+  }
+}

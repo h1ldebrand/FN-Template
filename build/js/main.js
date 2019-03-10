@@ -1,11 +1,7 @@
 $(document).ready(function(){
-	
-	console.log('jquery connect');
-
+	console.log('jquery  80');
 });
 
 $(window).resize(function(){
 
-	//code...
-	
 });
